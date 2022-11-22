@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1rem;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+.list {
+  padding: 1.3rem;
+  border-radius: 2rem;
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.list__user {
+  width: 300px;
+  padding: 1rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  background-color: #7E81FF;
+  box-shadow: 4px 3px 6px rgb(0, 0, 0, 0.8);
+  color: #fff;
+}
+
+@media (min-width: 800px) {
+  .list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
